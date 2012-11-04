@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["erich.menge@me.com"]
   gem.description   = %q{Calculates the SHA256 tree hash of a file or string.  It also includes a command line tool.}
   gem.summary       = %q{Calculates the SHA256 tree hash of a file or string.  It also includes a command line tool.}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/erichmenge/treehash"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
