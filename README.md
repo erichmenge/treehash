@@ -1,4 +1,4 @@
-# Treehash
+# Treehash [![Build Status](https://secure.travis-ci.org/erichmenge/treehash.png)](http://travis-ci.org/erichmenge/treehash)
 
 Amazon Glacier uses a tree of SHA256 hashes. This is a tool to help you verify that your files were uploaded safely to
 Glacier.
