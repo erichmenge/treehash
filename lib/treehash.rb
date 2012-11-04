@@ -20,7 +20,7 @@ module Treehash
     end
 
     while shas.size > 1
-      shas = shas.each_slice(2).to_a.map do |pair|
+      shas = shas.each_slice(2).map do |pair|
         pair[1] ? Digest::SHA256.new.update(pair[0]).update(pair[1]).digest : pair[0]
       end
     end
