@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'treehash'
+
+File.open ARGV[0] do |f|
+  puts Treehash::calculate_tree_hash f
+end
