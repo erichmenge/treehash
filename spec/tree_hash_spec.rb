@@ -23,4 +23,8 @@ describe Treehash do
       hash.should == '2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae'
     end
   end
+
+  it "should raise if improper data type" do
+    expect { Treehash::calculate_tree_hash [] }.to raise_error
+  end
 end
