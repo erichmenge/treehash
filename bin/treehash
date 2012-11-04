@@ -2,6 +2,8 @@
 
 require 'treehash'
 
-File.open ARGV[0] do |f|
-  puts Treehash::calculate_tree_hash f
+ARGV.each do |file|
+  File.open file do |f|
+    puts Treehash::calculate_tree_hash f
+  end
 end
