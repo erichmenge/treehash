@@ -13,4 +13,4 @@ Glacier.
     Treehash::calculate_tree_hash string_or_io
 
 ### Command-Line:
-    treehash filename
+    $ treehash filename
