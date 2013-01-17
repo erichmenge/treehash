@@ -27,4 +27,8 @@ describe Treehash do
   it "should raise if improper data type" do
     expect { Treehash::calculate_tree_hash [] }.to raise_error
   end
+
+  it "should handle empty strings" do
+    Treehash::calculate_tree_hash('').should be_nil
+  end
 end
