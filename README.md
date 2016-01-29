@@ -12,5 +12,7 @@ Glacier.
 ### Library:
     Treehash::calculate_tree_hash string_or_io
 
+Do note that when a file object is passed, the read pointer is moved to the end of the file.
+
 ### Command-Line:
     $ treehash filename
